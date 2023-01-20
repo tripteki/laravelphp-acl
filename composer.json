@@ -1,0 +1,59 @@
+{
+    "name": "tripteki/laravelphp-acl",
+    "version": "1.0.0",
+    "description": "Trip Teknologi's Laravel.php ACL",
+
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [ { "name": "Trip Teknologi", "email": "tripteki.company@gmail.com" } ],
+    "homepage": "https://github.com/tripteki/laravelphp-acl",
+    "support": { "issues": "https://github.com/tripteki/laravelphp-acl/issues" },
+
+    "require": {
+
+        "php": "^8.0.2",
+
+        "tripteki/laravelphp-repository": "^1.0.0",
+        "tripteki/laravelphp-helpers": "^1.0.0",
+        "spatie/laravel-permission": "^5.8.0",
+        "tripteki/laravelphp-request-response-query": "^1.0.0"
+    },
+
+    "require-dev": {},
+
+    "suggest": {
+
+        "laravel/lumen-framework": "Required when using lumen framework (^9.0).",
+        "laravel/framework": "Required when using laravel framework (^9.0)."
+    },
+
+    "autoload": {
+
+        "files": [
+
+            "src/Helpers/Accesses.php"
+        ],
+
+        "psr-4": {
+
+            "Tripteki\\ACL\\": "src/"
+        }
+    },
+
+    "autoload-dev": {},
+
+    "extra": {
+
+        "laravel": {
+
+            "dont-discover": [],
+
+            "providers": [
+
+                "Tripteki\\ACL\\Providers\\ACLServiceProvider"
+            ],
+
+            "aliases": []
+        }
+    }
+}
